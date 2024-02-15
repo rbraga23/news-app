@@ -46,7 +46,7 @@ Caso preficar rodar cada container individualmente
 
 ## Documentação
 
-[Documentação](http:localhost:<porta>/api)
+[http://localhost:<porta>/api](http://localhost:<porta>/api)
 
 ## Variáveis de Ambiente
 
