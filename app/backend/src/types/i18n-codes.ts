@@ -1,0 +1,74 @@
+export enum CountryCode {
+  ae = 'ae', // United Arab Emirates
+  ar = 'ar', // Argentina
+  at = 'at', // Austria
+  au = 'au', // Australia
+  be = 'be', // Belgium
+  bg = 'bg', // Bulgaria
+  br = 'br', // Brazil
+  ca = 'ca', // Canada
+  ch = 'ch', // Switzerland
+  cn = 'cn', // China
+  co = 'co', // Colombia
+  cu = 'cu', // Cuba
+  cz = 'cz', // Czech Republic
+  de = 'de', // Germany
+  eg = 'eg', // Egypt
+  fr = 'fr', // France
+  gb = 'gb', // United Kingdom
+  gr = 'gr', // Greece
+  hk = 'hk', // Hong Kong
+  hu = 'hu', // Hungary
+  id = 'id', // Indonesia
+  ie = 'ie', // Ireland
+  il = 'il', // Israel
+  in = 'in', // India
+  it = 'it', // Italy
+  jp = 'jp', // Japan
+  kr = 'kr', // South Korea
+  lt = 'lt', // Lithuania
+  lv = 'lv', // Latvia
+  ma = 'ma', // Morocco
+  mx = 'mx', // Mexico
+  my = 'my', // Malaysia
+  ng = 'ng', // Nigeria
+  nl = 'nl', // Netherlands
+  no = 'no', // Norway
+  nz = 'nz', // New Zealand
+  ph = 'ph', // Philippines
+  pl = 'pl', // Poland
+  pt = 'pt', // Portugal
+  ro = 'ro', // Romania
+  rs = 'rs', // Serbia
+  ru = 'ru', // Russia
+  sa = 'sa', // Saudi Arabia
+  se = 'se', // Sweden
+  sg = 'sg', // Singapore
+  si = 'si', // Slovenia
+  sk = 'sk', // Slovakia
+  th = 'th', // Thailand
+  tr = 'tr', // Turkey
+  tw = 'tw', // Taiwan
+  ua = 'ua', // Ukraine
+  us = 'us', // United States
+  ve = 've', // Venezuela
+  za = 'za', // South Africa
+}
+
+// create a enum that is a union of this coutnry codes: ar de en es fr he it nl no pt ru sv ud zh
+export enum LanguageCode {
+  ar = 'ar', // Arabic
+  de = 'de', // German
+  en = 'en', // English
+  es = 'es', // Spanish
+  fr = 'fr', // French
+  he = 'he', // Hebrew
+  it = 'it', // Italian
+  nl = 'nl', // Dutch
+  no = 'no', // Norwegian
+  pt = 'pt', // Portuguese
+  ru = 'ru', // Russian
+  sv = 'sv', // Swedish
+  ud = 'ud', // Urdu
+  zh = 'zh', // Chinese
+}

@@ -1,0 +1,40 @@
+version: "3.5"
+
+services:
+  backend:
+    container_name: "backend"
+    build:
+      context: ./app/backend
+      dockerfile: ./Dockerfile
+      target: development
+    command: yarn start:dev
+    env_file:
+      - ./app/backend/.env
+    volumes:
+      - ./app/backend:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${BACKEND_PORT-3000}:${BACKEND_PORT-3000}
+    networks:
+      - news-app-network
+
+  frontend:
+    container_name: "frontend"
+    build:
+      context: ./app/frontend
+      dockerfile: ./Dockerfile
+      target: development
+    command: yarn dev --port ${FRONTEND_PORT-3001}
+    env_file:
+      - ./app/frontend/.env
+    volumes:
+      - ./app/frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${FRONTEND_PORT-3001}:${FRONTEND_PORT-3001}
+    networks:
+      - news-app-network
+
+networks:
+  news-app-network:
+    driver: bridge

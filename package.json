@@ -1,0 +1,10 @@
+{
+  "name": "news-api-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Rafael Braga",
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ]
+}
