@@ -1,18 +1,11 @@
-# NF APP
+# NEWS APP
 
-APP responsável para gerenciamento de despesas dos Empreendedores formalizados como Microempreendedores Individuais que buscam uma forma automática de organizar suas Receitas (geração de Notas Fiscais) para evitar surpresas com pagamento de impostos ao final do ano.
-
-## Funcionalidades
-
-- Gerenciar Notas Fiscais
-- Gerenciar Despesas
-- Analise de Dashboard
+APP responsável para buscar as ultimas noticias por um tópico especifico.
 
 ## Tecnologias
 
 - NodeJS ([NestJS](https://nestjs.com/))
 - Javascript ([ReactJS](https://pt-br.legacy.reactjs.org/))
-- mongoDB ([moongose](https://mongoosejs.com/))
 - Monorepo
 - yarn
 - Docker
@@ -24,7 +17,7 @@ O APP foi construido separando o backend do frontend, então para executar será
 Clone o projeto
 
 ```bash
-  git clone https://git.vibbra.com.br/rafael-1657549296/news-app.git
+  git clone git@github.com:rbraga23/news-app.git
 ```
 
 Entre no diretório do projeto
@@ -53,7 +46,7 @@ Caso preficar rodar cada container individualmente
 
 ## Documentação
 
-[Documentação](https://news-app-backend.rbmdev.com.br/api)
+[Documentação](http:localhost:<porta>/api)
 
 ## Variáveis de Ambiente
 
